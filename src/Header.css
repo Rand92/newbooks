@@ -5,3 +5,24 @@ a{
 a:hover{
   color:darkgrey;
 }
+.Carousel{
+margin-left: 25%;
+/* margin-top: 2.5%; */
+width: 50%;
+}
+.color{
+  color: rgb(85, 13, 13);
+  font-weight: 700;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  color: antiquewhite;
+}
+body{
+  background-image: url('https://wallpaperaccess.com/full/124383.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+
+}
