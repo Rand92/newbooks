@@ -1,8 +1,8 @@
 import axios from 'axios';
 import React, { Component } from 'react';
 import { Carousel, Button } from 'react-bootstrap';
-import './Header.css';
-import AddBookButton from './AddBookButton'
+// import './Header.css';
+
 
 class BestBooks extends Component {
     constructor(props) {
@@ -11,18 +11,11 @@ class BestBooks extends Component {
             randbooks: [],
         }
     }
-    componentDidMount = () => {
-        axios.get(`http://localhost:3001/allBooks?id=6147be01d09977cc31d25274`).then(Response => {
-            { console.log(Response) }
-            this.setState({
-                randbooks: Response.data
-            })
-        })
-    }
+    
     render() {
         return (
             <div> <h1 className="title"> Welcom To Our Library </h1>
-                <AddBookButton />
+               
                 {this.state.randbooks.length > 0 && <Carousel indicators={true} className="Carousel ">
                     {this.state.randbooks.map((singleBook, i) => {
                         return <Carousel.Item>
